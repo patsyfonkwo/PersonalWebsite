@@ -1,0 +1,64 @@
+.page-title {
+    background: linear-gradient(300deg, #7164ff, #dd98ff, #ff8979);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* width: 35rem; */
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .add-padding {
+    padding: 2rem;
+  }
+
+  .job-list {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .job-description {
+    list-style-type:circle;
+    padding-left:3rem; 
+    padding-right:2rem; 
+    padding-bottom: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .profile-pic {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .carousel-of-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 35rem) {
+    .carousel-of-items {
+      display: flex;
+      flex-direction: row;
+    }
+  }
